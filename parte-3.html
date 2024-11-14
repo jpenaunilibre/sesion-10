@@ -13,6 +13,12 @@
        let licencia = true;
        let puede_conducir = mayor_edad && licencia;
 
+       let nombre = "Usuario";
+       let mensajeBienvenidaConcatenacion = "¡Hola, " + nombre + "! Bienvenido a nuestra plataforma de conducción.";
+       document.write(mensajeBienvenidaConcatenacion + "<br>");
+       let mensajeBienvenidaTemplate = `¡Hola, ${nombre}! Bienvenido a nuestra plataforma de conducción.`;
+       document.write(mensajeBienvenidaTemplate + "<br><br>");
+
        console.log("¿La persona puede conducir? ", puede_conducir);
        document.write("¿La persona puede conducir? ", puede_conducir, "<br>");
 
